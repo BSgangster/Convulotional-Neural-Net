@@ -5,3 +5,4 @@ Very simplistic machine learning python program, that trains computer on a set o
 * You can add you add the dir of the image into my own code to test if it works.
 * The .h5 files is very important it's used to store object data.
 * Very detailed explanation will be given soon(I hope you know your stats and maths :D).
+* Will upload training data and testing data. (For training the model from scratch).
