@@ -80,11 +80,11 @@ classifier.save('my_model.h5')
 
 
 from keras.models import load_model
-classfier  = load_model('F:\Tuts and Uni\Machine learning and Ai\Sphe Machine Learning course\Data Sets\P14-Convolutional-Neural-Networks\Convolutional_Neural_Networks\hello.h5')
+classfier  = load_model('F:\hello.h5')
  
 import numpy as np
 from keras.preprocessing import image
-test_img = image.load_img('F:\Tuts and Uni\Machine learning and Ai\Sphe Machine Learning course\Data Sets\P14-Convolutional-Neural-Networks\Convolutional_Neural_Networks\animal.png',target_size = (64,64))
+test_img = image.load_img('F:\animal.png',target_size = (64,64))
 test_img = image.img_to_array(test_img)
 test_img = np.expand_dims(test_img, axis = 0)
 result = classfier.predict(test_img)
