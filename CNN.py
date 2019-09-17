@@ -1,3 +1,15 @@
+"""
+Warning was compiled and tested using jupyter, however it is completely possible to compile this code without jypter,
+just simply run it with command >> python3 CNN.py
+
+However to train the model again remove the triple quotes comments from the section that says '#CNN training block'
+After this I suggest you comment out the section that says '#After training'
+Afer you have excuted '$CNN training block' you can now add back '#After training' and comment out "#CNN training block" and the CNN will -
+now identify two different objects from image files related to the objects.
+"""
+
+"""
+#CNN training block
 #Importing the Keras libs and packs
 from keras.models import Sequential
 from keras.layers import Convolution2D
@@ -71,9 +83,12 @@ else:
 
 classifier.save('my_model.h5')
 
+"""
 
+#After training
+#Warning this code must only be added after model was creating.
 from keras.models import load_model
-classfier  = load_model('F:\hello.h5')
+classfier  = load_model('\hello.h5')
  
 import numpy as np
 from keras.preprocessing import image
