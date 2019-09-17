@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Mar 30 19:56:24 2019
-
-@author: PeanutTheButter
-"""
-
 #Importing the Keras libs and packs
 from keras.models import Sequential
 from keras.layers import Convolution2D
