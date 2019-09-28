@@ -86,13 +86,16 @@ classifier.save('my_model.h5')
 """
 
 #After training
-#Warning this code must only be added after model was creating.
+#Warning this code must only be added after model was creating. Luckily for you I've got a saved model in the .h5 so you can test off of that one
+#However if you want to train another model, you'll have to comment out this below and remove the comments from the block above.
+#The above code just creates the model though, the code below saves it's object data in a .h5 file and then also allows you to use the model
+#-As many times as you want even after the program is killed. So need to train it for hours again :D
 from keras.models import load_model
-classfier  = load_model('\hello.h5')
+classfier  = load_model('\hello.h5')#please make sure the .h5 files is within the same dir, as the CNN.py file
  
 import numpy as np
 from keras.preprocessing import image
-test_img = image.load_img('F:\animal.png',target_size = (64,64))
+test_img = image.load_img('F:\animal.png',target_size = (64,64))#please make sure you give the correct dir of where the image files is that you want to test
 test_img = image.img_to_array(test_img)
 test_img = np.expand_dims(test_img, axis = 0)
 result = classfier.predict(test_img)
