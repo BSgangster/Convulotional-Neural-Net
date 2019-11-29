@@ -4,7 +4,7 @@ just simply run it with command >> python3 CNN.py
 
 However to train the model again remove the triple quotes comments from the section that says '#CNN training block'
 After this I suggest you comment out the section that says '#After training'
-Afer you have excuted '$CNN training block' you can now add back '#After training' and comment out "#CNN training block" and the CNN will -
+Afer you have excuted '#CNN training block' you can now add back '#After training' and comment out "#CNN training block" and the CNN will -
 now identify two different objects from image files related to the objects.
 """
 
