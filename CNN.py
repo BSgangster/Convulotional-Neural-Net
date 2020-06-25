@@ -17,10 +17,10 @@ from keras.layers import MaxPooling2D
 from keras.layers import Flatten
 from keras.layers import Dense
 
-#initializing the cnn
+#initializing the model
 classifier = Sequential()
 
-#adding the convu layer
+#adding the conv2d layer
 classifier.add(Convolution2D(32,(3,3),input_shape = (64,64,3),activation = 'relu'))
 
 #adding the pooling layer
@@ -33,7 +33,7 @@ classifier.add(MaxPooling2D(pool_size = (2,2)))
 #flattening layer
 classifier.add(Flatten())
 
-#connecting the cnn with ann completing the classification
+#connecting the cnn with ann
 classifier.add(Dense(units = 128,activation = 'relu'))
 classifier.add(Dense(units = 1,activation = 'sigmoid'))
 
